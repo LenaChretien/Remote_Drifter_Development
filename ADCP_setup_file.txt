@@ -1,0 +1,64 @@
+; Use this file to set up ADCP’s
+CR1
+
+;Flow control, set as needed:
+CF11110
+
+;Turnkey 
+CT0
+
+; Number of Pings in ensemble [0-999]
+BP 100 
+
+;Turn Water mass mode on or off [0=off 1=WB 2=LostB 3=W]
+BK0
+
+;Maximum Tracking depth range, Set to depth slightly greater than the expected maximum water depth [10 - 65535 dm]
+BX01000 
+
+;Salinity [ppt]
+ES35 
+
+;Coordinate Transformation
+; EX00xxx No transportation. Radial beam coorinates, Heading/Pitch/Roll not applied
+; EX01xxx Instrument coordinates, X,Y,Z vectors relative to DVL, Heading/Pitch/Roll not applied
+; EX10xxx Ship coordinates. Heading/Pitch/Roll applied
+; EX11xxx Earth coordinates, East, North, Vertical relative to Earth
+; EXxx1xx Use tilt/pitch/roll in transformation
+; EXxxx1x Allow 3-bram solution
+; EXxxxx1 Allow bin mapping
+
+EX11111 
+
+; Orientation (down for drifter)
+#EU 2 
+
+
+
+; Time Between Ensembles (as needed)
+TE00:00:30.00 
+
+; Time between Pings (as needed)
+TP00:00.00 
+
+; Set time and date
+TS04/01/01,00:03:14.07 
+
+
+
+; Data out
+WD 111100000
+
+; Blanking distance after transmit [0-9999cm]
+WF0088 
+
+; Number of Bins [0-255]
+WN020
+
+; Number of Pings per Ensamble [0-16384]
+WP100 
+
+;Bin Size [cm]
+WS0050
+
+

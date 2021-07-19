@@ -1,0 +1,146 @@
+
+BP 100 ---------------------- Number of BT Pings in ensemble [0-999]
+BK 0 ---------------------- WMass Mode [0=off 1=WB 2=LostB 3=W]
+BX 01000 ------------------ Max Depth (dm) [10-65535 dm]
+B? ------------------------ Display B-Command Menu
+
+>#B?
+Available Commands:
+
+#BA 024 -------------------- Amplitude Threshold [0..255]
+#BB 0005 ------------------- Blanking distance [0-9999cm]
+#BC 220 -------------------- Correlation Threshold [0..255]
+#BE 1000 ------------------- Error Velocity Threshold [0-9999mm/s]
+#BF 00000 ------------------ Depth Guess [0=Auto, 1-65535dm]
+#BI 003 -------------------- Gain Switch Altitude [0-999m]
+#BJ 100000000 -------------- Data Out {t;c;*;h;r;*;*;*;*}
+#BK 0 ---------------------- WMass Mode [0=off 1=WB 2=LostB 3=W]
+#BL  20,   80,  160 -------- WMass Params [min, near, far (dm)]
+#BN 0,999 ------------------ Speed Log Hold/Drop Control
+#BO 025 -------------------- Distance Accum. Filter Tau (1/100ths)
+#BS ------------------------ Clear Distance Traveled
+#B? ------------------------ Display #B-Command Menu
+
+
+>C?
+Available Commands:
+
+CB 511 -------------------- Serial Port Control {baud;parity;stop}
+CF 11110 ------------------ Set Ctrl Flags {e;p;b;s;*}
+CK ------------------------ Save Command Parameters to Flash
+CR ------------------------ Restore Cmd defaults [0=user,1=factory]
+CS ------------------------ Start Pinging
+CX 0     0 65535 ---------- Set Input Trigger [mode, dly, timeout]
+C? ------------------------ Display C-Command Menu
+
+>#C?
+Available Commands:
+
+#CO 0 0 -------------------- Set Out Trig ([0-3]=[off r/x x r], pol)
+#CT 0 ---------------------- Turnkey [0 = OFF, 1 = ON]
+#C? ------------------------ Display #C-Command Menu
+
+>E?
+Available Commands:
+
+EA +00000 ----------------- Heading Alignment [.01 deg cw]
+EC 1500 ------------------- Speed Of Sound [m/s]
+ED 00000 ------------------ Xdcr Depth [dm]
+ES 35 --------------------- Salinity [ppt]
+EX 00111 ------------------ Coordinate Transformations
+EZ 22222220 --------------- Sensor Source {c;d;h;p;r;s;t;u}
+E? ------------------------ Display E-Command Menu
+
+>#E?
+Available Commands:
+
+#EC 1500 ------------------- Speed Of Sound [m/s]
+#EE 0000010 ---------------- Rsrvd[4]; Cmd[1]; Rw/Nm[1]; Snsr Out[1]
+#EH 00000,1 ---------------- Heading {heading;frame}
+#EI +00000 ----------------- Roll Misalignment Angle [.01 deg cw]
+#EJ +00000 ----------------- Pitch Misalignment Angle [.01 deg cw]
+#EP +0000,+0000,1 ---------- Tilts {pitch;roll;frame}
+#ER +0000 ------------------ Roll [.01 deg cw]
+#ET 2100 ------------------- Water Temperature [.01 deg C]
+#EU 2 ---------------------- Orientation [0=Switch,1=Up,2=Down]
+#EV +00000 ----------------- Heading Bias [.01 deg cw]
+#EY 0 0 0 0 0 0 0 0 -------- Dplr Param Override Src {c;d;h;p;r;s;t;u}
+#E? ------------------------ Display #B-Command Menu
+
+>M?
+Available Commands:
+
+ME ------------------------ ErAsE recoder
+MM ------------------------ Show memory usage
+MN EXP --- Set file name [1..32 characters]
+MR 0 ---------------------- Set recorder on/off [0=off,1=on]
+MY ------------------------ Y-Modem output
+M? ------------------------ Display M-Command Menu
+
+>#M?  ERR:  Bad command!
+
+>P?
+Available Commands:
+
+PA ------------------------ Run Go/No-Go Tests
+PC ------------------------ Built In Tests [0=help]
+PD 0 ---------------------- Data Stream Select
+PS ------------------------ System Info [0=config,1=fldr,3=xform]
+PT ------------------------ Transmit, Receive and Continuity. [0=help]
+P? ------------------------ Display P-Command Menu
+
+>#P?
+Available Commands:
+
+#PD 0 ---------------------- Data Stream Select
+#P? ------------------------ Display P-Command Menu
+
+
+>S?
+Available Commands:
+
+SC ------------------------ Sensor Commands [ID Event Time-out "Command"]
+SD ------------------------ Sensor Data Out [ID abcd..., a-d=1/0]
+SM ------------------------ Snsr Auxlliary Menus [sid]
+SP 0 99;0 99;0 99;9 110 ---- Sensor-port Assign [sp p sid [to]]
+SR ------------------------ Sensor Reset [sid]
+S? ------------------------ Display S-Command Menu
+
+>#S?
+Available Commands:
+
+#SO  101.325 --------------- Abs Press Sensor Offset [kPa]
+#S? ------------------------ Display #S-Command Menu
+
+>T?
+Available Commands:
+
+TE 00:00:30.00 ------------ Time Between Ensembles
+TP 00:00.00 --------------- Time Between Pings
+TS 04/01/01,00:03:14.07 --- Set System Date and Time
+TT 2004/01/01,00:03:14.07 - Set System Date and Time (4-digit year)
+T? ------------------------ Display T-Command Menu
+
+>#T?  ERR:  Bad command!
+
+>W?
+Available Commands:
+
+WB 0 ---------------------- Bandwidth 0=High, 1=low
+WD 111100000 -------------- Data Out {v;c;a;p;s;*;*;*;*}
+WF 0088 ------------------- Blanking Distance [0-9999cm]
+WN 020 -------------------- Number of Bins [0-255]
+WP 100 -------------------- Number of Pings [0-16384]
+WS 0050 ------------------- Bin Size [cm]
+WV 0500 ------------------- Ambiguity Velocity [20-700cm/s]
+W? ------------------------ Display W-Command Menu
+
+>#W?
+Available Commands:
+
+#WA 050 -------------------- False Target Amplitude Threshold [0-255]
+#WC 064 -------------------- Correlation Threshold [0-255]
+#WE 2000 ------------------- Error Velocity Threshold (mm/s)
+#WJ 1 ---------------------- BroadBand Rcvr Gain [0=Lo,1=Hi]
+#WT 0000 ------------------- Transmit Length (cm)
+#W? ------------------------ Display #W-Command Menu

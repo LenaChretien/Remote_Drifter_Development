@@ -1,0 +1,961 @@
+' User-defined mission variables
+Const Target_Pressure1 = 20 ' target pressure for Dive 1 (in centi-Bars)
+Const Target_Pressure2 = 50 ' target pressure for Dive 2
+Const Clearance_Off_Bottom = 20 ' dive with clearance off bottom (in deci-meters)
+
+Const Max_Cycle_Count = 4 ' maximum cycles for mission
+Const sw_time = 24.5 'Time until dropweight is released (hours)
+
+Const scan_time = 15 'time in minutes
+
+
+
+
+
+' Status variables
+Public Mode_String As String * 4
+Dim Cycle_Count
+Dim Dimm
+Dim Drop_Weight_Counter
+Dim Clock(9)
+Dim Batt
+
+
+' DVL module variables
+Dim DVL_String As String * 35000
+Dim DVL_String_Length
+Dim DVL_File_Handle As Long
+Dim DVL_File_Status
+Dim DVL_Comm_Status
+
+' CTD module variables
+Dim CTD_String As String * 10000
+Dim CTD_String_Length
+Dim CTD_File_Handle As Long
+Dim CTD_File_Status
+Dim CTD_Comm_Status
+
+' Iridium/GPS module variables
+ Dim IRD_String As String * 10000
+ Dim IRD_String_Length
+ Dim IRD_File_Handle As Long
+ Dim IRD_File_Status
+ Dim IRD_Comm_Status
+
+' Depth module variables
+ Dim DPT_String As String * 10000
+ Dim DPT_String_Length
+ Dim DPT_File_Handle As Long
+ Dim DPT_File_Status
+ Dim DPT_Comm_Status
+ 
+ 'Other variables
+ Dim Ct_ram
+ Dim Ct_nav
+ Dim Ct_pres
+ Dim scnnr
+ Dim Err_ct
+ Dim Fail As String * 1000
+ Dim Fail_split(8) As String   
+ Dim RealTime(9)
+ Dim Dest As String * 50 
+ Dim NBytes  
+ Public sw_rel     
+ 
+' Float-Switch variables
+ Dim FLT_Voltage
+ Dim FLT_Counter
+
+
+
+
+Sub BE_reset
+  ExciteV(Vx3,2500,1000000) ' reset the depth module
+  ExciteV(Vx3,0,0)
+  Delay(1,45,Sec)
+  SerialOut(Com4,CHR(13),"->"&CHR(03),5,100) ' get attention
+  SerialOut(Com4,"?S"&CHR(13),"->"&CHR(03),0,2000) ' check status
+  Delay(1,10,msec)
+EndSub
+  
+Sub BE_reset_hard
+  ExciteV(Vx3,2500,7000000) ' reset the depth module
+  ExciteV(Vx3,0,0)
+  Delay(1,35,Sec)
+  SerialOut(Com4,CHR(13),"->"&CHR(03),5,100) ' get attention
+  SerialOut(Com4,"?S"&CHR(13),"->"&CHR(03),0,2000) ' check status
+  Delay(1,10,msec)
+EndSub
+
+
+Sub Setup_DVL
+  
+  SerialOut(Com1,"===",">",3,100) ' get attention
+  ' SerialOut(Com1,"TT"&RealTime(1)&"/"&RealTime(2)&"/"&RealTime(3)&","&RealTime(4)&":"&RealTime(5)&":"&RealTime(6)&CHR(13),0,0,0) 'Set date and time
+  SerialOut(Com1,"PS0"&CHR(13),">",0,1000)
+  SerialOut(Com1,"PS3"&CHR(13),">",0,1000) ' System Conf
+  SerialOut(Com1,"PT5"&CHR(13),">",0,1000) 'Transmit Check
+  SerialOut(Com1,"PT7"&CHR(13),">",0,1000)  'Wiring test
+  SerialOut(Com1,"PA"&CHR(13),">",0,1000) ' check status
+  
+  SerialOut(Com1,"BP050"&CHR(13),0,0,0) ' Bottom track Ping per Ensamble
+  SerialOut(Com1,"BK0"&CHR(13),0,0,0)   ' WaterMass Mode 0=off, 1=ping after every bottom track ping, 2=as 1 but only when unable to find bottom, 3=no bottom track but watermass Mode
+  SerialOut(Com1,"BX01000"&CHR(13),0,0,0)  ' Max Depth (dm)
+ 'SerialOut(Com1,"#BA024"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BB5"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BC220"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BE1000"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BF0"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BI003"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BJ100000000"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BL20,80,160"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BN0,999"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BO25"&CHR(13),">",3,100) 
+ 'SerialOut(Com1,"#BS"&CHR(13),">",3,100) 
+ 
+  'SerialOut(Com1,"CB511"&CHR(13),">",3,100) 
+  SerialOut(Com1,"CF11110"&CHR(13),0,0,0) ' Flow control
+  SerialOut(Com1,"#CT0"&CHR(13),0,0,0) ' Turnkey off
+
+  SerialOut(Com1,"ED00000"&CHR(13),0,0,0) ' Depth of transducer [dm]
+  SerialOut(Com1,"ES35"&CHR(13),0,0,0) ' Salinity
+  
+  'Coordinate transportmation
+  SerialOut(Com1,"EX11110"&CHR(13),0,0,0) ' No transformation
+  SerialOut(Com1,"EZ22222220"&CHR(13),0,0,0) 'Sensor Source
+  SerialOut(Com1,"#EU2"&CHR(13),0,0,0) 'Orientation Down
+  SerialOut(Com1,"#EC1500"&CHR(13),0,0,0)  ' Speed of Sound
+  SerialOut(Com1,"#EE0000010"&CHR(13),0,0,0) 'Phased Array
+  SerialOut(Com1,"#EH0,1"&CHR(13),0,0,0)  ' Ship coordinates
+  SerialOut(Com1,"#ET2100"&CHR(13),0,0,0)  'Temperature
+  'SerialOut(Com1,"#EY00000000"&CHR(13),0,0,0)  'Sensor overwrite
+  
+  
+  'Time settings
+ ' SerialOut(Com1,"TS17/04/01,00:03:14"&CHR(13),0,0,0) 'Set date and time
+  SerialOut(Com1,"TE00:00:30,00"&CHR(13),0,0,0) ' Time between Ensembles
+  SerialOut(Com1,"TP00:00:00"&CHR(13),0,0,0) ' Time between Pings
+  
+  'Data Out
+  SerialOut(Com1,"WB0"&CHR(13),0,0,0)  ' Bandwidth 0=High, 1 = narrow
+  SerialOut(Com1,"WD111100000"&CHR(13),0,0,0) 'get attention
+  SerialOut(Com1,"WF0088"&CHR(13),0,0,0) 'Blanking distance after trasmit
+  SerialOut(Com1,"WN030"&CHR(13),0,0,0) ' Number of bins
+  SerialOut(Com1,"WP50"&CHR(13),0,0,0) ' Number of Pings per Ensaamble
+  SerialOut(Com1,"WS0030"&CHR(13),0,0,0) ' Bin Size [cm]
+  SerialOut(Com1,"WV500"&CHR(13),0,0,0)   ' Ambiguity Velocity
+  
+  SerialOut(Com1,"#WA050"&CHR(13),0,0,0)   ' False Target Threshold Maximum
+  SerialOut(Com1,"#WC64"&CHR(13),0,0,0)   ' Low Correlation Threshold
+  SerialOut(Com1,"#WE2000"&CHR(13),0,0,0)   ' Error Velocity Threshold
+  SerialOut(Com1,"#WJ1"&CHR(13),0,0,0)   ' Receiver Gain Select
+  SerialOut(Com1,"#WT0000"&CHR(13),0,0,0)   ' Transmit Length
+       
+  SerialOut(Com1,"CK"&CHR(13),0,0,0)
+EndSub
+  
+
+Sub Setup_CTD
+ SerialOut(Com2,CHR(13),">"&CHR(13)&CHR(10),3,100) ' get attention
+' Delay(1,3,sec)
+ 'SerialOut(Com2,"STOP",">"&CHR(13)&CHR(10),5,100)
+ 
+ SerialOut(Com2,"SampleInterval=30"&CHR(13),">"&CHR(13)&CHR(10),5,100) ' Sample Interval in seconds
+ 'Delay(1,3,sec)
+ SerialOut(Com2,"OutputFormat=1"&CHR(13),">"&CHR(13)&CHR(10),5,100) 'Output format
+ 'Delay(1,3,sec)
+ SerialOut(Com2,"OutputSal=Y"&CHR(13),">"&CHR(13)&CHR(10),5,100)  ' Output Salinity
+' Delay(1,2,sec)
+ SerialOut(Com2,"OutputSV=Y"&CHR(13),">"&CHR(13)&CHR(10),5,100) ' Calculate Sound Speed
+' Delay(1,2,sec)
+ SerialOut(Com2,"OutputTemp=Y"&CHR(13),">"&CHR(13)&CHR(10),5,100)   'Output Temperature
+' Delay(1,2,sec)
+ SerialOut(Com2,"OutputPress=Y"&CHR(13),">"&CHR(13)&CHR(10),5,100) ' Output Pressure
+' Delay(1,2,sec)
+ SerialOut(Com2,"OutputOx=Y"&CHR(13),">"&CHR(13)&CHR(10),5,100) 'Output Oxygen
+' Delay(1,2,sec)
+ SerialOut(Com2,"TxRealTime=Y"&CHR(13),">"&CHR(13)&CHR(10),5,100)
+ 'Delay(1,2,sec)
+ SerialOut(Com2,"MinCondFreq=500"&CHR(13),">"&CHR(13)&CHR(10),5,100)   'Minimum conductivity frequency to enable pump turn-off
+ 
+  'Delay(1,2,sec) 
+ SerialOut(Com2,"Legacy=0"&CHR(13),">"&CHR(13)&CHR(10),5,100) 'Allow all variables to be measured
+  'Delay(1,2,sec)
+ SerialOut(Com2,"SyncMode=N"&CHR(13),">"&CHR(13)&CHR(10),5,100) 
+  'Delay(1,2,sec)
+ SerialOut(Com2,"SampleNumber=0"&CHR(13),">"&CHR(13)&CHR(10),5,100) 'Make all memory available
+  'Delay(1,2,sec)
+ SerialOut(Com2,"AdaptivePumpControl=Y"&CHR(13),">"&CHR(13)&CHR(10),5,100)  ' Adaptive Pump Contorl for Oxygen samples
+  'Delay(1,2,sec)
+ SerialOut(Com2,"DC"&CHR(13),">"&CHR(13)&CHR(10),5,100) ' Get Calibration coefficients
+   
+ SerialOut(Com2,"DS"&CHR(13),0,0,0) ' Configuration Data
+EndSub
+
+
+
+Sub Deploy
+  Mode_String = "DPLY"
+  sw_rel = 0
+  SW12(0) 'disable the drop-weight release
+  
+  SerialOpen(Com1,19200,19,0,25000) ' open DVL comm port
+  SerialOpen(Com2,19200,19,0,10000) ' open CTD comm port
+  SerialOpen(Com3,19200,19,0,10000) ' open IRD comm port
+  SerialOpen(Com4,19200,19,0,10000) ' open DPT comm port
+  Delay(1,1,sec)
+  
+  
+  Call Setup_DVL
+  
+  Call Setup_CTD
+  
+  SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com3,"!F"&CHR(13)&"2",0,0,0) ' set flash off
+  SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com3,"?S"&CHR(13),0,0,0) ' check status
+  
+  'address BE
+  Call BE_reset_hard
+  SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status
+
+
+  'Check Float Switch
+  Do
+    VoltSe(FLT_Voltage,1,mv2500C,1,True,0,_60Hz,1,0)
+    Delay(1,1,Sec)
+    If FLT_Voltage < 100 Then
+      If FLT_Counter > 0 Then
+        FLT_Counter = FLT_Counter - 1
+      EndIf
+    Else
+      FLT_Counter = FLT_Counter + 1
+    EndIf
+  Loop Until FLT_Counter > 10
+      
+  SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com3,"!F"&CHR(13)&"1",0,0,0) ' set flash on
+  Delay(1,1,Sec)
+EndSub
+
+
+
+
+Sub Initialize
+  Mode_String = "INIT"
+  SerialOut(Com1,"===",">",3,100) ' get attention
+  SerialOut(Com1,"CS"&CHR(13),0,0,0) ' start DVL
+  SerialOut(Com2,CHR(13),">"&CHR(13)&CHR(10),3,100) ' get attention
+  SerialOut(Com2,"StartNow"&CHR(13),0,0,0) ' start CTD
+EndSub
+
+Sub ReInitialize
+  SerialOut(Com1,"===",">",3,100) ' get attention
+  SerialOut(Com1,"CS"&CHR(13),0,0,0) ' start DVL
+  SerialOut(Com2,CHR(13),">"&CHR(13)&CHR(10),3,100) ' get attention
+  SerialOut(Com2,"StartNow"&CHR(13),0,0,0) ' start CTD
+EndSub
+
+
+
+
+Sub Dive1
+  Mode_String = "DIV1"
+   SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention 
+  SerialOut(Com3,"!F"&CHR(13)&"2",0,0,0) ' set flash off
+   
+  Call BE_reset
+  
+  SerialOut(Com4,CHR(13),"->"&CHR(03),5,100) ' get attention
+  
+  Call Check_Status
+   
+   SerialOut(Com4,"!D "+Target_Pressure1+" "+Clearance_Off_Bottom+CHR(13),0,0,0) ' start the dive cycle
+EndSub
+
+
+
+Sub ReDive1
+  Mode_String = "DIV1"
+  Call BE_reset
+  SerialOut(Com4,"XR"&CHR(13),0,0,0) ' clear the dive flags
+  Delay(1,10,Sec)
+  SerialOut(Com4,CHR(13),"->"&CHR(03),3,1000) ' get attention
+  SerialOut(Com4,"?S"&CHR(13),"->"&CHR(03),0,2000) ' check status
+  SerialOut(Com4,"!D "+Target_Pressure1+" "+Clearance_Off_Bottom+CHR(13),0,0,0) ' start the dive cycle
+EndSub
+
+
+
+
+Sub Dive2
+  Mode_String = "DIV2"
+  Call BE_reset
+  
+  SerialOut(Com4,CHR(13),"->"&CHR(03),5,100)  'get attention
+  
+  Call Check_Status
+  
+  SerialOut(Com4,"!D "+Target_Pressure2+" "+Clearance_Off_Bottom+CHR(13),0,0,0) ' start the dive cycle
+EndSub
+
+
+
+Sub ReDive2
+  Mode_String = "DIV2"
+  Call BE_reset
+  SerialOut(Com4,"XR"&CHR(13),0,0,0) ' clear the dive flags
+  Delay(1,10,Sec)
+  SerialOut(Com4,CHR(13),"->"&CHR(03),3,1000) ' get attention
+  SerialOut(Com4,"?S"&CHR(13),"->"&CHR(03),0,2000) ' check status
+  SerialOut(Com4,"!D "+Target_Pressure2+" "+Clearance_Off_Bottom+CHR(13),0,0,0) ' start the dive cycle
+EndSub
+
+
+
+
+Sub Surface
+  Mode_String = "SURF"
+  SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com3,"!F"&CHR(13)&"1"&CHR(13),0,0,0) ' set flash on
+  SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com3,"?S"&CHR(13),0,0,0) ' check status
+
+  Call BE_reset
+ 
+  SerialOut(Com4,"!S"&CHR(13),0,0,0) ' start the surface cycle
+EndSub
+
+
+
+Sub ReSurface
+  Mode_String = "SURF"
+  Call BE_reset
+  
+  SerialOut(Com4,"XR"&CHR(13),0,0,0) ' clear the dive flags
+  Delay(1,10,Sec)
+  SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status
+  Delay(1,10,Sec)
+  SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com4,"!S"&CHR(13),0,0,0) ' start the surface cycle
+EndSub
+
+
+
+Sub Check_Status
+  Ct_ram = 0
+  Ct_nav = 0
+  Ct_pres = 0
+    
+  Do
+  SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status 
+  Delay(1,10,Sec)
+  SerialInRecord(Com4,Fail,68,218,0,NBytes,01) 'Bouyancy Engine or Nav_Mux failure
+  SplitStr(Fail_split,Fail,"*",8,4)
+      
+  If Fail_split(1) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(2) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(3) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(4) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(5) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(6) = "Failed to wake Buoyancy"
+      Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(7) = "Failed to wake Buoyancy"
+      Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(8) = "Failed to wake Buoyancy"
+      Ct_ram = Ct_ram + 1
+  Else 
+      Ct_ram = 0
+  EndIf
+          
+          
+  'Find possible NAV_MUX error
+   If Fail_split(1) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(2) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(3) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(4) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(5) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(6) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(7) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(8) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   Else 
+      Ct_nav = 0
+   EndIf
+   
+   
+    'Find possible pressure sensor failure
+    If Fail_split(1) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(2) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(3) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(4) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(5) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(6) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(7) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(8) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    Else 
+      Ct_pres = 0
+    EndIf
+             
+    If Ct_ram =  1
+      'Clear Flags
+      SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+      SerialOut(Com4,"XR"&CHR(13),0,0,0) ' clear the dive flags
+    ElseIf Ct_ram = 2 
+     ' BE_reset DOES NOT HELP go to hard reset right away
+      Call BE_reset_hard
+    ElseIf Ct_ram = 3
+      Call BE_reset_hard
+    EndIf
+         
+    If Ct_nav =  1
+      Call BE_reset
+    ElseIf Ct_nav = 2 
+      Call BE_reset_hard
+    ElseIf Ct_nav = 3
+     Call BE_reset_hard
+    EndIf
+         
+    If Ct_pres =  1
+      Call BE_reset
+    ElseIf Ct_pres = 2 
+       Call BE_reset
+    ElseIf Ct_pres = 3
+      Call BE_reset_hard
+    EndIf
+       
+       
+    If Ct_ram = 0 
+      If Ct_nav = 0 
+        If Ct_pres = 0
+             Ct_ram = 4
+             Ct_nav = 4
+             Ct_pres = 4
+          EndIf
+        EndIf
+      EndIf
+    Loop Until Ct_nav = 4 OR Ct_ram = 4 OR Ct_pres = 4 
+EndSub
+
+
+
+Sub Check_Status_Surface
+  Ct_ram = 0
+  Ct_nav = 0
+  Ct_pres = 0
+    
+  Do
+  SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status 
+  Delay(1,10,Sec)
+  SerialInRecord(Com4,Fail,68,218,0,NBytes,01) 'Bouyancy Engine or Nav_Mux failure
+  SplitStr(Fail_split,Fail,"*",8,4)
+      
+  If Fail_split(1) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(2) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(3) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(4) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(5) = "Failed to wake Buoyancy"
+     Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(6) = "Failed to wake Buoyancy"
+      Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(7) = "Failed to wake Buoyancy"
+      Ct_ram = Ct_ram + 1
+  ElseIf Fail_split(8) = "Failed to wake Buoyancy"
+      Ct_ram = Ct_ram + 1
+  Else 
+      Ct_ram = 0
+  EndIf
+          
+          
+  'Find possible NAV_MUX error
+   If Fail_split(1) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(2) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(3) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(4) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(5) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(6) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(7) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   ElseIf Fail_split(8) = "Failed to wake Nav_Mux"
+      Ct_nav = Ct_nav + 1
+   Else 
+      Ct_nav = 0
+   EndIf
+   
+   
+    'Find possible pressure sensor failure
+    If Fail_split(1) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(2) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(3) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(4) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(5) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(6) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(7) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    ElseIf Fail_split(8) = "Pressure query failed, "
+      Ct_pres = Ct_pres + 1
+    Else 
+      Ct_pres = 0
+    EndIf
+             
+    If Ct_ram =  1
+      'Clear Flags
+      SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+      SerialOut(Com4,"XR"&CHR(13),0,0,0) ' clear the dive flags
+    ElseIf Ct_ram = 2 
+     ' BE_reset DOES NOT HELP go to hard reset right away
+      Call BE_reset_hard
+    ElseIf Ct_ram = 3
+      Call BE_reset_hard
+    EndIf
+         
+    If Ct_nav =  1
+       Call BE_reset
+    ElseIf Ct_nav = 2 
+     ' BE_reset DOES NOT HELP go to hard reset right away
+       Call BE_reset_hard
+    ElseIf Ct_nav = 3
+       Call BE_reset_hard
+    EndIf
+         
+    If Ct_pres =  1
+       Call BE_reset
+    ElseIf Ct_pres = 2 
+      ' BE_reset DOES NOT HELP go to hard reset right away
+       Call BE_reset
+    ElseIf Ct_pres = 3
+       Call BE_reset_hard
+    EndIf
+       
+       
+    If Ct_ram = 0 
+      If Ct_nav = 0 
+        If Ct_pres = 0
+          If Mode_String = "DIV1" AND sw_rel < 999 Then
+             Call Dive1
+             Ct_ram = 4
+             Ct_nav = 4
+             Ct_pres = 4
+          ElseIf Mode_String = "DIV2" AND sw_rel < 999 Then
+             Call Dive2
+             Ct_ram = 4
+             Ct_nav = 4
+             Ct_pres = 4
+          EndIf
+        EndIf
+      EndIf
+    EndIf
+    Loop Until Ct_nav = 4 OR Ct_ram = 4 OR Ct_pres = 4 
+EndSub
+
+
+Sub Check_Status_Dive 
+   SerialInRecord(Com4,Dest,42,0,44,NBytes,01)
+  
+   If Dest = " Critical Fault"
+     Err_ct = Err_ct + 1
+     Delay(1,5,Sec)
+     SerialOut(Com4,CHR(13),"->"&CHR(03),1,100) ' hit enter
+   EndIf
+       
+   If Err_ct > 0
+     Err_ct = 0
+     Do 'Try three times to solve this before surfacing
+    
+     SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status 
+     Delay(1,10,Sec)
+     SerialInRecord(Com4,Fail,68,218,0,NBytes,01) 'Bouyancy Engine or Nav_Mux failure
+     SplitStr(Fail_split,Fail,"*",8,4)
+          
+      'Find possible RAM ERROR
+      If Fail_split(1) = "Failed to wake Buoyancy"
+        Ct_ram = Ct_ram + 1
+      ElseIf Fail_split(2) = "Failed to wake Buoyancy"
+         Ct_ram = Ct_ram + 1
+      ElseIf Fail_split(3) = "Failed to wake Buoyancy"
+         Ct_ram = Ct_ram + 1
+      ElseIf Fail_split(4) = "Failed to wake Buoyancy"
+         Ct_ram = Ct_ram + 1
+      ElseIf Fail_split(5) = "Failed to wake Buoyancy"
+         Ct_ram = Ct_ram + 1
+      ElseIf Fail_split(6) = "Failed to wake Buoyancy"
+         Ct_ram = Ct_ram + 1
+      ElseIf Fail_split(7) = "Failed to wake Buoyancy"
+         Ct_ram = Ct_ram + 1
+      ElseIf Fail_split(8) = "Failed to wake Buoyancy"
+         Ct_ram = Ct_ram + 1
+      Else 
+         Ct_ram = 0
+      EndIf
+       
+      'Find possible NAV_MUX error
+      If Fail_split(1) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      ElseIf Fail_split(2) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      ElseIf Fail_split(3) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      ElseIf Fail_split(4) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      ElseIf Fail_split(5) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      ElseIf Fail_split(6) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      ElseIf Fail_split(7) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      ElseIf Fail_split(8) = "Failed to wake Nav_Mux "
+         Ct_nav = Ct_nav + 1
+      Else 
+         Ct_nav = 0
+      EndIf
+       
+      'Find possible pressure sensor failure
+      If Fail_split(1) = "Pressure query failed, "
+        Ct_pres = Ct_pres + 1
+      ElseIf Fail_split(2) = "Pressure query failed, "
+         Ct_pres = Ct_pres + 1
+      ElseIf Fail_split(3) = "Pressure query failed, "
+         Ct_pres = Ct_pres + 1
+      ElseIf Fail_split(4) = "Pressure query failed, "
+         Ct_pres = Ct_pres + 1
+      ElseIf Fail_split(5) = "Pressure query failed, "
+         Ct_pres = Ct_pres + 1
+      ElseIf Fail_split(6) = "Pressure query failed, "
+         Ct_pres = Ct_pres + 1
+      ElseIf Fail_split(7) = "Pressure query failed, "
+         Ct_pres = Ct_pres + 1
+      ElseIf Fail_split(8) = "Pressure query failed, "
+         Ct_pres = Ct_pres + 1
+      Else 
+         Ct_pres = 0
+      EndIf
+             
+      If Ct_ram =  1
+      '  Clear Flags
+        SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+        SerialOut(Com4,"XR"&CHR(13),0,0,0) ' clear the dive flags
+      ElseIf Ct_ram = 2 
+        ' BE_reset DOES NOT HELP go to hard reset right away
+        Call BE_reset_hard
+      ElseIf Ct_ram = 3
+        Call BE_reset_hard
+      EndIf
+     
+      If Ct_nav =  1
+        'Clear Flags
+  '            SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+  '           SerialOut(Com4,"XR"&CHR(13),0,0,0) ' clear the dive flags
+         Call BE_reset
+      ElseIf Ct_nav = 2 
+        ' BE_reset DOES NOT HELP go to hard reset right away
+         Call BE_reset_hard
+      ElseIf Ct_nav = 3
+         Call BE_reset_hard
+      EndIf
+      
+      If Ct_pres =  1
+        'Clear Flags
+         Call BE_reset
+      ElseIf Ct_pres = 2 
+        ' BE_reset DOES NOT HELP go to hard reset right away
+         Call BE_reset
+      ElseIf Ct_pres = 3
+         Call BE_reset_hard
+      EndIf
+       
+      If Ct_ram = 4
+        'Surfacing will not work if RAM is dead. Drop drop weight. 
+        Call SW_release
+      ElseIf Ct_pres = 4 
+        'Surfacing will not work if RAM is dead. I have seen the RAM fail randomly at this point in the code hence, the drifter would be unable to surface.
+        ' Check status one last time. 
+         SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status 
+         Delay(1,10,Sec)
+         SerialInRecord(Com4,Fail,68,218,0,NBytes,01) 'Bouyancy Engine or Nav_Mux failure
+         SplitStr(Fail_split,Fail,"*",8,4)
+     
+          'Find possible RAM ERROR
+          If Fail_split(1) = "Failed to wake Buoyancy"
+           ' Call SW_release
+          ElseIf Fail_split(2) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(3) = "Failed to wake Buoyancy"
+            ' Call SW_release
+          ElseIf Fail_split(4) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(5) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(6) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(7) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(8) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          Else
+            Call Emerg_Surface
+          EndIf       
+      ElseIf Ct_nav = 4
+        'Surfacing will not work if RAM is dead. I have seen the RAM fail randomly at this point in the code hence, the drifter would be unable to surface.
+        ' Check status one last time. 
+         SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status 
+         Delay(1,10,Sec)
+         SerialInRecord(Com4,Fail,68,218,0,NBytes,01) 'Bouyancy Engine or Nav_Mux failure
+         SplitStr(Fail_split,Fail,"*",8,4)
+     
+          'Find possible RAM ERROR
+          If Fail_split(1) = "Failed to wake Buoyancy"
+          '  Call SW_release
+          ElseIf Fail_split(2) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(3) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(4) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(5) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(6) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(7) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          ElseIf Fail_split(8) = "Failed to wake Buoyancy"
+           '  Call SW_release
+          Else
+             Call Emerg_Surface
+          EndIf
+      EndIf
+           
+      If Ct_ram = 0 
+        If Ct_nav = 0 
+          If Ct_pres = 0
+            If Mode_String = "DIV1" AND sw_rel < 999 Then
+              Call Dive1
+              Ct_ram = 4
+              Ct_nav = 4
+              Ct_pres = 4
+            ElseIf Mode_String = "DIV2" AND sw_rel < 999 Then
+              Call Dive2
+              Ct_ram = 4
+              Ct_nav = 4
+              Ct_pres = 4
+            EndIf
+          EndIf
+        EndIf
+      EndIf
+      Loop Until Ct_nav = 4 OR Ct_ram = 4 OR Ct_pres = 4 
+        
+    EndIf
+EndSub
+     
+     
+ 
+     
+Sub Emerg_Surface
+    Mode_String = "EM_SURF"
+    SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention
+    SerialOut(Com3,"!F"&CHR(13)&"1",0,0,0) ' set flash on
+  
+    SerialOut(Com4,"!S"&CHR(13),0,0,0) ' start the surface cycle
+    
+   If TimeIntoInterval(0,1,hr)
+     Call Check_Status_Surface
+   EndIf
+EndSub
+
+  
+Sub Comm_Check
+  'Write DVL files
+  DVL_String_Length = SerialInBlock(Com1,DVL_String,25000)
+  If DVL_String_Length > 0 Then
+    DVL_File_Handle = FileOpen("CRD:DVL.txt","ab",-1)
+    FileWrite(DVL_File_Handle,DVL_String,DVL_String_Length)
+    DVL_File_Status = FileClose(DVL_File_Handle)
+  EndIf
+  
+  'Write CTD files
+   CTD_String_Length = SerialInBlock(Com2,CTD_String,10000)
+  If CTD_String_Length > 0 Then
+    CTD_File_Handle = FileOpen("CRD:CTD.txt","a",-1)
+    FileWrite(CTD_File_Handle,CTD_String,CTD_String_Length)
+    CTD_File_Status = FileClose(CTD_File_Handle)
+  EndIf
+  
+   'Write Irisium files
+  IRD_String_Length = SerialInBlock(Com3,IRD_String,10000)
+  IRD_File_Handle = FileOpen("CRD:IRD.txt","a",-1)
+  If IRD_String_Length > 0 Then
+    FileWrite(IRD_File_Handle,IRD_String,IRD_String_Length)
+  EndIf
+    FileWrite(IRD_File_Handle,CHR(13)+CHR(10)+CHR(13)+CHR(10),0)
+    FileWrite(IRD_File_Handle,"Cycle: "+FormatFloat(Cycle_Count,"%03.0f")+" Mode: "+Mode_String+" Batt: "+FormatFloat(Batt,"%05.02f"),0)
+    FileWrite(IRD_File_Handle," Date: "+FormatFloat(Clock(1),"%04.0f")+"/"+FormatFloat(Clock(2),"%02.0f")+"/"+FormatFloat(Clock(3),"%02.0f"),0)
+    FileWrite(IRD_File_Handle," Time: "+FormatFloat(Clock(4),"%02.0f")+":"+FormatFloat(Clock(5),"%02.0f")+":"+FormatFloat(Clock(6),"%02.0f"),0)
+    FileWrite(IRD_File_Handle,CHR(13)+CHR(10),0)
+    IRD_File_Status = FileClose(IRD_File_Handle)
+    
+
+  ' Write Depth file
+  DPT_String_Length = SerialInBlock(Com4,DPT_String,10000)
+  DPT_File_Handle = FileOpen("CRD:DPT.txt","a",-1)
+  If DPT_String_Length > 0 Then
+    FileWrite(DPT_File_Handle,DPT_String,DPT_String_Length)
+  EndIf
+    FileWrite(DPT_File_Handle,CHR(13)+CHR(10)+CHR(13)+CHR(10),0)
+    FileWrite(DPT_File_Handle,"Cycle: "+FormatFloat(Cycle_Count,"%03.0f")+" Mode: "+Mode_String+" Batt: "+FormatFloat(Batt,"%05.02f"),0)
+    FileWrite(DPT_File_Handle," Date: "+FormatFloat(Clock(1),"%04.0f")+"/"+FormatFloat(Clock(2),"%02.0f")+"/"+FormatFloat(Clock(3),"%02.0f"),0)
+    FileWrite(DPT_File_Handle," Time: "+FormatFloat(Clock(4),"%02.0f")+":"+FormatFloat(Clock(5),"%02.0f")+":"+FormatFloat(Clock(6),"%02.0f"),0) 
+    FileWrite(DPT_File_Handle,CHR(13)+CHR(10),0)
+    DPT_File_Status = FileClose(DPT_File_Handle)
+EndSub
+
+
+Sub Iridium
+  SerialOut(Com3,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com3,"!B"&CHR(13),0,0,0) ' send iridium message
+  SerialOut(Com4,CHR(13),"->"&CHR(03),3,100) ' get attention
+  SerialOut(Com4,"?S"&CHR(13),0,0,0) ' check status
+EndSub
+ 
+
+Sub SW_release
+  SW12(1)
+  sw_rel = 999
+EndSub
+
+Sub Error_dive1
+   Err_ct = 0 
+   Ct_ram = 0
+   Ct_nav = 0 
+   Ct_pres = 0
+  Do
+     Call Check_Status_Dive
+  Loop Until TimeIntoInterval(0,scan_time,Min)
+EndSub
+
+Sub Error_dive2
+  Err_ct = 0
+  Ct_ram = 0
+  Ct_nav = 0
+  Ct_pres = 0
+  Do 
+    Call Check_Status_Dive
+  Loop Until TimeIntoInterval(0,scan_time,Min)
+EndSub
+
+
+
+
+''''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''
+BeginProg
+  Cycle_Count = 0
+  sw_rel = 0
+  
+  Call Deploy
+  
+  Scan(scan_time,Min,0,0)
+    sw_rel = sw_rel + 0.25  ' Depends on scan_time
+        
+    If sw_rel = sw_time
+      Call SW_release
+    EndIf
+
+    RealTime(Clock)
+    Battery(Batt)
+    Call Comm_Check
+ 
+      'If drop weight has been dropped
+    If sw_rel = 999
+      ExitScan
+    EndIf
+   
+    If DVL_String_Length = 0 OR CTD_String_Length = 0 Then
+      Call ReInitialize
+    EndIf
+    
+    If Mode_String = "DPLY" Then
+      Call Initialize
+      Call Iridium
+   
+    ElseIf Mode_String = "INIT" Then
+      Cycle_Count = Cycle_Count + 1
+      Call Dive1
+      Call Error_dive1
+    
+    ElseIf Mode_String = "DIV1" Then
+      If TimeIntoInterval(0,2,Hr) Then
+        Call Surface
+      ElseIf TimeIntoInterval(0,2,Hr)
+        Call Dive2 
+        Call Error_dive2
+      ElseIf DPT_String_Length = 0 Then
+        Call ReDive1
+      EndIf
+     
+    ElseIf Mode_String = "DIV2" Then 
+        If TimeIntoInterval(0,6,Hr) Then
+           Call Surface
+        ElseIf DPT_String_Length = 0 Then
+           Call ReDive2
+        EndIf
+           
+    ElseIf Mode_String = "SURF" Then
+       Call Iridium
+       If TimeIntoInterval(0,30,Min) AND Cycle_Count < Max_Cycle_Count Then
+         Cycle_Count = Cycle_Count + 1
+         Call Dive1
+         Call Error_dive1
+       ElseIf Cycle_Count = Max_Cycle_Count
+           Call Iridium
+       EndIf
+    EndIf
+    
+       
+ NextScan 
+
+  Call Surface
+  Scan(5,Min,0,0)
+    Call Iridium
+  NextScan
+    
+EndProg
+

@@ -1,0 +1,2028 @@
+Cycle: 000 Mode: DPLY Batt: 11.97 Date: 2017/05/18 Time: 11:00:00
+
+
+Cycle: 000 Mode: INIT Batt: 11.96 Date: 2017/05/18 Time: 11:15:00
+
+
+Cycle: 001 Mode: DIV1 Batt: 11.97 Date: 2017/05/18 Time: 11:30:00
+
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir not Empty
+ Vacuum OK
+ VBat= 16.27 V, IBat= -0.012 A, Capacity= 92.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x00
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x10
+
+->
+ Trimming the pump
+ RAM EOTs have been calibrated
+><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+Cycle: 001 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 11:45:00
+><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+->
+ t= 1, TD= 200 cm WD= 70 dm, P= 568 mBars, Pmp_Adj= 1100
+ Nav_Adjust returned DC_Health = 00
+ t= 32, TD= 200 cm WD= 9999 dm, P= 609 mBars, Pmp_Adj= 834
+ Nav_Adjust returned DC_Health = 00
+ t= 63, TD= 200 cm WD= 9999 dm, P= 615 mBars, Pmp_Adj= -171
+ Nav_Adjust returned DC_Health = 00
+ t= 94, TD= 200 cm WD= 9999 dm, P= 612 mBars, Pmp_Adj= 44
+ Nav_Adjust returned DC_Health = 00
+ t= 125, TD= 200 cm WD= 9999 dm, P= 613 mBars, Pmp_Adj= 204
+ Nav_Adjust returned DC_Health = 00
+ t= 156, TD= 200 cm WD= 9999 dm, P= 613 mBars, Pmp_Adj= 146
+ Nav_Adjust returned DC_Health = 00
+ t= 187, TD= 200 cm WD= 9999 dm, P= 618 mBars, Pmp_Adj= 241
+ Nav_Adjust returned DC_Health = 00
+ t= 218, TD= 200 cm WD= 9999 dm, P= 615 mBars, Pmp_Adj= 55
+ Nav_Adjust returned DC_Health = 00
+ t= 249, TD= 200 cm WD= 9999 dm, P= 605 mBars, Pmp_Adj= 19
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 001 Mode: DIV1 Batt: 11.97 Date: 2017/05/18 Time: 12:00:00
+
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 65 cBars, Reservoir not Empty
+ Vacuum OK
+ VBat= 16.24 V, IBat= -0.011 A, Capacity= 92.0%
+ Battery charge OK
+ Press= 615 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x80
+
+->
+
+<><><><><><
+
+Cycle: 001 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 12:15:00
+><><><[]
+ BMod_Flags= 0x01, Position= 12602, Max_Extension= 12803
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 001 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 12:30:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+Cycle: 002 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 12:45:00
+><><><><><><><><><><
+
+->
+ t= 1, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 1100
+ Nav_Adjust returned DC_Health = 00
+ t= 32, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 166
+ Nav_Adjust returned DC_Health = 00
+ t= 63, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 112
+ Nav_Adjust returned DC_Health = 00
+ t= 94, TD= 200 cm WD= 9999 dm, P= 557 mBars, Pmp_Adj= 235
+ Nav_Adjust returned DC_Health = 00
+ t= 125, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= -62
+ Nav_Adjust returned DC_Health = 00
+ t= 156, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 233
+ Nav_Adjust returned DC_Health = 00
+ t= 187, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 156
+ Nav_Adjust returned DC_Health = 00
+ t= 218, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 62
+ Nav_Adjust returned DC_Health = 00
+ t= 249, TD= 200 cm WD= 9999 dm, P= 554 mBars, Pmp_Adj= 248
+ Nav_Adjust returned DC_Health = 00
+ t= 280, TD= 200 cm WD= 9999 dm, P= 548 mBars, Pmp_Adj= -19
+ Nav_Adjust returned DC_Health = 00
+ t= 311, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 211
+ Nav_Adjust returned DC_Health = 00
+ t= 342, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 122
+ Nav_Adjust returned DC_Health = 00
+ t= 373, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 132
+ Nav_Adjust returned DC_Health = 00
+ t= 404, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 183
+ Nav_Adjust returned DC_Health = 00
+ t= 435, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 68
+ Nav_Adjust returned DC_Health = 00
+ t= 466, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 153
+ Nav_Adjust returned DC_Health = 00
+ t= 497, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 183
+ Nav_Adjust returned DC_Health = 00
+ t= 528, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 52
+ Nav_Adjust returned DC_Health = 02
+ t= 559, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 215
+ Nav_Adjust returned DC_Health = 00
+ t= 590, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 68
+ Nav_Adjust returned DC_Health = 00
+ t= 621, TD= 200 cm WD= 9999 dm, P= 548 mBars, Pmp_Adj= 103
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 002 Mode: DIV1 Batt: 11.97 Date: 2017/05/18 Time: 13:00:00
+
+ t= 652, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 180
+ Nav_Adjust returned DC_Health = 00
+ t= 683, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 156
+ Nav_Adjust returned DC_Health = 00
+ t= 714, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 129
+ Nav_Adjust returned DC_Health = 00
+ t= 745, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 140
+ Nav_Adjust returned DC_Health = 00
+ t= 776, TD= 200 cm WD= 9999 dm, P= 555 mBars, Pmp_Adj= 157
+ Nav_Adjust returned DC_Health = 00
+ t= 807, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 46
+ Nav_Adjust returned DC_Health = 00
+ t= 838, TD= 200 cm WD= 9999 dm, P= 555 mBars, Pmp_Adj= 242
+ Nav_Adjust returned DC_Health = 00
+ t= 869, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 42
+ Nav_Adjust returned DC_Health = 00
+ t= 900, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 148
+ Nav_Adjust returned DC_Health = 00
+ t= 931, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 177
+ Nav_Adjust returned DC_Health = 00
+ t= 962, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 79
+ Nav_Adjust returned DC_Health = 00
+ t= 993, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 154
+ Nav_Adjust returned DC_Health = 00
+ t= 1024, TD= 200 cm WD= 9999 dm, P= 554 mBars, Pmp_Adj= 184
+ Nav_Adjust returned DC_Health = 00
+ t= 1055, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 52
+ Nav_Adjust returned DC_Health = 00
+ t= 1086, TD= 200 cm WD= 9999 dm, P= 557 mBars, Pmp_Adj= 266
+ Nav_Adjust returned DC_Health = 00
+ t= 1117, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= -28
+ Nav_Adjust returned DC_Health = 00
+ t= 1148, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 179
+ Nav_Adjust returned DC_Health = 00
+ t= 1179, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 160
+ Nav_Adjust returned DC_Health = 00
+ t= 1210, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 156
+ Nav_Adjust returned DC_Health = 00
+ t= 1241, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 113
+ Nav_Adjust returned DC_Health = 00
+ t= 1272, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 83
+ Nav_Adjust returned DC_Health = 00
+ t= 1303, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 215
+ Nav_Adjust returned DC_Health = 00
+ t= 1334, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 85
+ Nav_Adjust returned DC_Health = 00
+ t= 1365, TD= 200 cm WD= 9999 dm, P= 543 mBars, Pmp_Adj= -8
+ Nav_Adjust returned DC_Health = 00
+ t= 1396, TD= 200 cm WD= 9999 dm, P= 554 mBars, Pmp_Adj= 410
+ Nav_Adjust returned DC_Health = 00
+ t= 1427, TD= 200 cm WD= 9999 dm, P= 541 mBars, Pmp_Adj= -200
+ Nav_Adjust returned DC_Health = 00
+ t= 1458, TD= 200 cm WD= 9999 dm, P= 540 mBars, Pmp_Adj= 248
+ Nav_Adjust returned DC_Health = 00
+ t= 1489, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 292
+ Nav_Adjust returned DC_Health = 00
+ t= 1520, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 38
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 002 Mode: DIV1 Batt: 11.95 Date: 2017/05/18 Time: 13:15:00
+
+ t= 1551, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= 64
+ Nav_Adjust returned DC_Health = 00
+ t= 1582, TD= 200 cm WD= 9999 dm, P= 544 mBars, Pmp_Adj= 156
+ Nav_Adjust returned DC_Health = 00
+ t= 1613, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 225
+ Nav_Adjust returned DC_Health = 00
+ t= 1644, TD= 200 cm WD= 9999 dm, P= 547 mBars, Pmp_Adj= 46
+ Nav_Adjust returned DC_Health = 00
+ t= 1675, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 220
+ Nav_Adjust returned DC_Health = 00
+ t= 1706, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= -9
+ Nav_Adjust returned DC_Health = 00
+ t= 1737, TD= 200 cm WD= 9999 dm, P= 541 mBars, Pmp_Adj= 126
+ Nav_Adjust returned DC_Health = 00
+ t= 1768, TD= 200 cm WD= 9999 dm, P= 541 mBars, Pmp_Adj= 171
+ Nav_Adjust returned DC_Health = 00
+ t= 1799, TD= 200 cm WD= 9999 dm, P= 547 mBars, Pmp_Adj= 231
+ Nav_Adjust returned DC_Health = 00
+ t= 1830, TD= 200 cm WD= 9999 dm, P= 543 mBars, Pmp_Adj= 1
+ Nav_Adjust returned DC_Health = 00
+ t= 1861, TD= 200 cm WD= 9999 dm, P= 542 mBars, Pmp_Adj= 155
+ Nav_Adjust returned DC_Health = 02
+ t= 1892, TD= 200 cm WD= 9999 dm, P= 546 mBars, Pmp_Adj= 208
+ Nav_Adjust returned DC_Health = 00
+ t= 1923, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= 72
+ Nav_Adjust returned DC_Health = 00
+ t= 1954, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= 141
+ Nav_Adjust returned DC_Health = 00
+ t= 1985, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= 131
+ Nav_Adjust returned DC_Health = 00
+ t= 2016, TD= 200 cm WD= 9999 dm, P= 541 mBars, Pmp_Adj= 63
+ Nav_Adjust returned DC_Health = 00
+ t= 2047, TD= 200 cm WD= 9999 dm, P= 543 mBars, Pmp_Adj= 205
+ Nav_Adjust returned DC_Health = 00
+ t= 2078, TD= 200 cm WD= 9999 dm, P= 546 mBars, Pmp_Adj= 160
+ Nav_Adjust returned DC_Health = 02
+ t= 2109, TD= 200 cm WD= 9999 dm, P= 548 mBars, Pmp_Adj= 134
+ Nav_Adjust returned DC_Health = 00
+ t= 2140, TD= 200 cm WD= 9999 dm, P= 542 mBars, Pmp_Adj= 9
+ Nav_Adjust returned DC_Health = 00
+ t= 2171, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= 243
+ Nav_Adjust returned DC_Health = 00
+ t= 2202, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 218
+ Nav_Adjust returned DC_Health = 00
+ t= 2233, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= -57
+ Nav_Adjust returned DC_Health = 00
+ t= 2264, TD= 200 cm WD= 9999 dm, P= 541 mBars, Pmp_Adj= 136
+ Nav_Adjust returned DC_Health = 00
+ t= 2295, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 323
+ Nav_Adjust returned DC_Health = 00
+ t= 2326, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 22
+ Nav_Adjust returned DC_Health = 00
+ t= 2357, TD= 200 cm WD= 9999 dm, P= 547 mBars, Pmp_Adj= 109
+ Nav_Adjust returned DC_Health = 00
+ t= 2388, TD= 200 cm WD= 9999 dm, P= 555 mBars, Pmp_Adj= 288
+ Nav_Adjust returned DC_Health = 00
+ t= 2419, TD= 200 cm WD= 9999 dm, P= 548 mBars, Pmp_Adj= -67
+ Nav_Adjust returned DC_Health = 00
+ t= 2450, TD= 200 cm WD= 9999 dm, P= 547 mBars, Pmp_Adj= 188
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 002 Mode: DIV1 Batt: 11.97 Date: 2017/05/18 Time: 13:30:00
+
+ t= 2481, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= 108
+ Nav_Adjust returned DC_Health = 00
+ t= 2512, TD= 200 cm WD= 9999 dm, P= 554 mBars, Pmp_Adj= 304
+ Nav_Adjust returned DC_Health = 00
+ t= 2543, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= -44
+ Nav_Adjust returned DC_Health = 00
+ t= 2574, TD= 200 cm WD= 9999 dm, P= 556 mBars, Pmp_Adj= 303
+ Nav_Adjust returned DC_Health = 00
+ t= 2605, TD= 200 cm WD= 9999 dm, P= 545 mBars, Pmp_Adj= -124
+ Nav_Adjust returned DC_Health = 00
+ t= 2636, TD= 200 cm WD= 9999 dm, P= 554 mBars, Pmp_Adj= 398
+ Nav_Adjust returned DC_Health = 00
+ t= 2667, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 6
+ Nav_Adjust returned DC_Health = 00
+ t= 2698, TD= 200 cm WD= 9999 dm, P= 543 mBars, Pmp_Adj= 2
+ Nav_Adjust returned DC_Health = 00
+ t= 2729, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 359
+ Nav_Adjust returned DC_Health = 00
+ t= 2760, TD= 200 cm WD= 9999 dm, P= 554 mBars, Pmp_Adj= 100
+ Nav_Adjust returned DC_Health = 00
+ t= 2791, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 52
+ Nav_Adjust returned DC_Health = 00
+ t= 2822, TD= 200 cm WD= 9999 dm, P= 555 mBars, Pmp_Adj= 232
+ Nav_Adjust returned DC_Health = 00
+ t= 2853, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 25
+ Nav_Adjust returned DC_Health = 00
+ t= 2884, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 141
+ Nav_Adjust returned DC_Health = 00
+ t= 2915, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 187
+ Nav_Adjust returned DC_Health = 00
+ t= 2946, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 146
+ Nav_Adjust returned DC_Health = 00
+ t= 2977, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 62
+ Nav_Adjust returned DC_Health = 00
+ t= 3008, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 215
+ Nav_Adjust returned DC_Health = 00
+ t= 3039, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 68
+ Nav_Adjust returned DC_Health = 00
+ t= 3070, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 137
+ Nav_Adjust returned DC_Health = 00
+ t= 3101, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 177
+ Nav_Adjust returned DC_Health = 00
+ t= 3132, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 95
+ Nav_Adjust returned DC_Health = 00
+ t= 3163, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 126
+ Nav_Adjust returned DC_Health = 00
+ t= 3194, TD= 200 cm WD= 9999 dm, P= 550 mBars, Pmp_Adj= 143
+ Nav_Adjust returned DC_Health = 00
+ t= 3225, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 166
+ Nav_Adjust returned DC_Health = 00
+ t= 3256, TD= 200 cm WD= 9999 dm, P= 548 mBars, Pmp_Adj= 45
+ Nav_Adjust returned DC_Health = 00
+ t= 3287, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 224
+ Nav_Adjust returned DC_Health = 00
+ t= 3318, TD= 200 cm WD= 9999 dm, P= 552 mBars, Pmp_Adj= 119
+ Nav_Adjust returned DC_Health = 00
+ t= 3349, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 106
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 002 Mode: DIV1 Batt: 11.97 Date: 2017/05/18 Time: 13:45:00
+
+ t= 3380, TD= 200 cm WD= 9999 dm, P= 548 mBars, Pmp_Adj= 93
+ Nav_Adjust returned DC_Health = 00
+ t= 3411, TD= 200 cm WD= 9999 dm, P= 549 mBars, Pmp_Adj= 180
+ Nav_Adjust returned DC_Health = 00
+ t= 3442, TD= 200 cm WD= 9999 dm, P= 561 mBars, Pmp_Adj= 325
+ Nav_Adjust returned DC_Health = 00
+ t= 3473, TD= 200 cm WD= 9999 dm, P= 559 mBars, Pmp_Adj= -21
+ Nav_Adjust returned DC_Health = 00
+ t= 3504, TD= 200 cm WD= 9999 dm, P= 557 mBars, Pmp_Adj= 123
+ Nav_Adjust returned DC_Health = 00
+ t= 3535, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 54
+ Nav_Adjust returned DC_Health = 00
+ t= 3566, TD= 200 cm WD= 9999 dm, P= 551 mBars, Pmp_Adj= 196
+ Nav_Adjust returned DC_Health = 00
+ t= 3597, TD= 200 cm WD= 9999 dm, P= 553 mBars, Pmp_Adj= 167
+ Nav_Adjust returned DC_Health = 00
+ t= 3628, TD= 200 cm WD= 9999 dm, P= 563 mBars, Pmp_Adj= 282
+ Nav_Adjust returned DC_Health = 02
+ t= 3659, TD= 200 cm WD= 9999 dm, P= 557 mBars, Pmp_Adj= -68
+ Nav_Adjust returned DC_Health = 00
+ t= 3690, TD= 200 cm WD= 9999 dm, P= 557 mBars, Pmp_Adj= 198
+ Nav_Adjust returned DC_Health = 00
+ t= 3721, TD= 200 cm WD= 9999 dm, P= 562 mBars, Pmp_Adj= 220
+ Nav_Adjust returned DC_Health = 00
+ t= 3752, TD= 200 cm WD= 9999 dm, P= 559 mBars, Pmp_Adj= 34
+ Nav_Adjust returned DC_Health = 00
+ t= 3783, TD= 200 cm WD= 9999 dm, P= 557 mBars, Pmp_Adj= 133
+ Nav_Adjust returned DC_Health = 00
+ t= 3814, TD= 200 cm WD= 9999 dm, P= 559 mBars, Pmp_Adj= 190
+ Nav_Adjust returned DC_Health = 00
+ t= 3845, TD= 200 cm WD= 9999 dm, P= 567 mBars, Pmp_Adj= 251
+ Nav_Adjust returned DC_Health = 00
+ t= 3876, TD= 200 cm WD= 9999 dm, P= 563 mBars, Pmp_Adj= -11
+ Nav_Adjust returned DC_Health = 00
+ t= 3907, TD= 200 cm WD= 9999 dm, P= 567 mBars, Pmp_Adj= 247
+ Nav_Adjust returned DC_Health = 00
+ t= 3938, TD= 200 cm WD= 9999 dm, P= 558 mBars, Pmp_Adj= -54
+ Nav_Adjust returned DC_Health = 00
+ t= 3969, TD= 200 cm WD= 9999 dm, P= 561 mBars, Pmp_Adj= 280
+ Nav_Adjust returned DC_Health = 00
+ t= 4000, TD= 200 cm WD= 9999 dm, P= 559 mBars, Pmp_Adj= 72
+ Nav_Adjust returned DC_Health = 00
+ t= 4031, TD= 200 cm WD= 9999 dm, P= 561 mBars, Pmp_Adj= 191
+ Nav_Adjust returned DC_Health = 00
+ t= 4062, TD= 200 cm WD= 9999 dm, P= 568 mBars, Pmp_Adj= 234
+ Nav_Adjust returned DC_Health = 00
+ t= 4093, TD= 200 cm WD= 9999 dm, P= 566 mBars, Pmp_Adj= 32
+ Nav_Adjust returned DC_Health = 00
+ t= 4124, TD= 200 cm WD= 9999 dm, P= 567 mBars, Pmp_Adj= 176
+ Nav_Adjust returned DC_Health = 00
+ t= 4155, TD= 200 cm WD= 9999 dm, P= 571 mBars, Pmp_Adj= 196
+ Nav_Adjust returned DC_Health = 00
+ t= 4186, TD= 200 cm WD= 9999 dm, P= 565 mBars, Pmp_Adj= -2
+ Nav_Adjust returned DC_Health = 00
+ t= 4217, TD= 200 cm WD= 9999 dm, P= 567 mBars, Pmp_Adj= 235
+ Nav_Adjust returned DC_Health = 00
+ t= 4248, TD= 200 cm WD= 9999 dm, P= 568 mBars, Pmp_Adj= 135
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 002 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 14:00:00
+
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 63 cBars, Reservoir not Empty
+ Vacuum OK
+ VBat= 16.18 V, IBat= -0.026 A, Capacity= 90.0%
+ Battery charge OK
+ Press= 569 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x84
+
+->
+
+<><><><><><
+
+Cycle: 002 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 14:15:00
+><><[]
+ BMod_Flags= 0x01, Position= 12525, Max_Extension= 12726
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 002 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 14:30:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+Cycle: 003 Mode: DIV1 Batt: 11.95 Date: 2017/05/18 Time: 14:45:00
+><><><><><><><><><><><><><><><><><
+
+->
+ t= 1, TD= 200 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 1100
+ Nav_Adjust returned DC_Health = 00
+ t= 32, TD= 200 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 100
+ Nav_Adjust returned DC_Health = 00
+ t= 63, TD= 200 cm WD= 9999 dm, P= 378 mBars, Pmp_Adj= 79
+ Nav_Adjust returned DC_Health = 00
+ t= 94, TD= 200 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= -20
+ Nav_Adjust returned DC_Health = 00
+ t= 125, TD= 200 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= 74
+ Nav_Adjust returned DC_Health = 00
+ t= 156, TD= 200 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 154
+ Nav_Adjust returned DC_Health = 00
+ t= 187, TD= 200 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= -8
+ Nav_Adjust returned DC_Health = 00
+ t= 218, TD= 200 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 87
+ Nav_Adjust returned DC_Health = 00
+ t= 249, TD= 200 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 100
+ Nav_Adjust returned DC_Health = 00
+ t= 280, TD= 200 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 12
+ Nav_Adjust returned DC_Health = 00
+ t= 311, TD= 200 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 87
+ Nav_Adjust returned DC_Health = 00
+ t= 342, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 234
+ Nav_Adjust returned DC_Health = 00
+ t= 373, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 76
+ Nav_Adjust returned DC_Health = 00
+ t= 404, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 435, TD= 174 cm WD= 9999 dm, P= 375 mBars, Pmp_Adj= 119
+ Nav_Adjust returned DC_Health = 00
+ t= 466, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= 4
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 003 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 15:00:00
+
+ t= 497, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 140
+ Nav_Adjust returned DC_Health = 00
+ t= 528, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 38
+ Nav_Adjust returned DC_Health = 00
+ t= 559, TD= 174 cm WD= 9999 dm, P= 375 mBars, Pmp_Adj= 119
+ Nav_Adjust returned DC_Health = 00
+ t= 590, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 72
+ Nav_Adjust returned DC_Health = 00
+ t= 621, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 32
+ Nav_Adjust returned DC_Health = 00
+ t= 652, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 96
+ Nav_Adjust returned DC_Health = 00
+ t= 683, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 714, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 103
+ Nav_Adjust returned DC_Health = 00
+ t= 745, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 65
+ Nav_Adjust returned DC_Health = 00
+ t= 776, TD= 174 cm WD= 9999 dm, P= 378 mBars, Pmp_Adj= 143
+ Nav_Adjust returned DC_Health = 00
+ t= 807, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= -31
+ Nav_Adjust returned DC_Health = 00
+ t= 838, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 100
+ Nav_Adjust returned DC_Health = 00
+ t= 869, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 103
+ Nav_Adjust returned DC_Health = 00
+ t= 900, TD= 174 cm WD= 9999 dm, P= 370 mBars, Pmp_Adj= -2
+ Nav_Adjust returned DC_Health = 02
+ t= 931, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 167
+ Nav_Adjust returned DC_Health = 00
+ t= 962, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 61
+ Nav_Adjust returned DC_Health = 00
+ t= 993, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 48
+ Nav_Adjust returned DC_Health = 00
+ t= 1024, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= 69
+ Nav_Adjust returned DC_Health = 00
+ t= 1055, TD= 174 cm WD= 9999 dm, P= 382 mBars, Pmp_Adj= 255
+ Nav_Adjust returned DC_Health = 00
+ t= 1086, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= -160
+ Nav_Adjust returned DC_Health = 00
+ t= 1117, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 142
+ Nav_Adjust returned DC_Health = 00
+ t= 1148, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 103
+ Nav_Adjust returned DC_Health = 00
+ t= 1179, TD= 174 cm WD= 9999 dm, P= 378 mBars, Pmp_Adj= 133
+ Nav_Adjust returned DC_Health = 00
+ t= 1210, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 18
+ Nav_Adjust returned DC_Health = 00
+ t= 1241, TD= 174 cm WD= 9999 dm, P= 379 mBars, Pmp_Adj= 121
+ Nav_Adjust returned DC_Health = 00
+ t= 1272, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= -44
+ Nav_Adjust returned DC_Health = 00
+ t= 1303, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 155
+ Nav_Adjust returned DC_Health = 00
+ t= 1334, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 65
+ Nav_Adjust returned DC_Health = 00
+ t= 1365, TD= 174 cm WD= 9999 dm, P= 385 mBars, Pmp_Adj= 262
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 003 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 15:15:00
+
+ t= 1396, TD= 174 cm WD= 9999 dm, P= 379 mBars, Pmp_Adj= -136
+ Nav_Adjust returned DC_Health = 00
+ t= 1427, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 55
+ Nav_Adjust returned DC_Health = 00
+ t= 1458, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= 94
+ Nav_Adjust returned DC_Health = 00
+ t= 1489, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 130
+ Nav_Adjust returned DC_Health = 00
+ t= 1520, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 38
+ Nav_Adjust returned DC_Health = 00
+ t= 1551, TD= 174 cm WD= 9999 dm, P= 378 mBars, Pmp_Adj= 170
+ Nav_Adjust returned DC_Health = 00
+ t= 1582, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= -59
+ Nav_Adjust returned DC_Health = 00
+ t= 1613, TD= 174 cm WD= 9999 dm, P= 381 mBars, Pmp_Adj= 263
+ Nav_Adjust returned DC_Health = 00
+ t= 1644, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= -89
+ Nav_Adjust returned DC_Health = 00
+ t= 1675, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 129
+ Nav_Adjust returned DC_Health = 00
+ t= 1706, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 76
+ Nav_Adjust returned DC_Health = 00
+ t= 1737, TD= 174 cm WD= 9999 dm, P= 387 mBars, Pmp_Adj= 263
+ Nav_Adjust returned DC_Health = 00
+ t= 1768, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= -271
+ Nav_Adjust returned DC_Health = 00
+ t= 1799, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 221
+ Nav_Adjust returned DC_Health = 00
+ t= 1830, TD= 174 cm WD= 9999 dm, P= 381 mBars, Pmp_Adj= 211
+ Nav_Adjust returned DC_Health = 00
+ t= 1861, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= -72
+ Nav_Adjust returned DC_Health = 00
+ t= 1892, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 68
+ Nav_Adjust returned DC_Health = 00
+ t= 1923, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 141
+ Nav_Adjust returned DC_Health = 00
+ t= 1954, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 55
+ Nav_Adjust returned DC_Health = 00
+ t= 1985, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 42
+ Nav_Adjust returned DC_Health = 00
+ t= 2016, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 147
+ Nav_Adjust returned DC_Health = 00
+ t= 2047, TD= 174 cm WD= 9999 dm, P= 379 mBars, Pmp_Adj= 79
+ Nav_Adjust returned DC_Health = 00
+ t= 2078, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= -27
+ Nav_Adjust returned DC_Health = 00
+ t= 2109, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= 94
+ Nav_Adjust returned DC_Health = 00
+ t= 2140, TD= 174 cm WD= 9999 dm, P= 370 mBars, Pmp_Adj= 62
+ Nav_Adjust returned DC_Health = 00
+ t= 2171, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 146
+ Nav_Adjust returned DC_Health = 00
+ t= 2202, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 61
+ Nav_Adjust returned DC_Health = 00
+ t= 2233, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 48
+ Nav_Adjust returned DC_Health = 00
+ t= 2264, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 86
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 003 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 15:30:00
+
+ t= 2295, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 92
+ Nav_Adjust returned DC_Health = 00
+ t= 2326, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 65
+ Nav_Adjust returned DC_Health = 00
+ t= 2357, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 109
+ Nav_Adjust returned DC_Health = 00
+ t= 2388, TD= 174 cm WD= 9999 dm, P= 380 mBars, Pmp_Adj= 123
+ Nav_Adjust returned DC_Health = 00
+ t= 2419, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= -98
+ Nav_Adjust returned DC_Health = 00
+ t= 2450, TD= 174 cm WD= 9999 dm, P= 378 mBars, Pmp_Adj= 260
+ Nav_Adjust returned DC_Health = 00
+ t= 2481, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= -2
+ Nav_Adjust returned DC_Health = 00
+ t= 2512, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= 2
+ Nav_Adjust returned DC_Health = 00
+ t= 2543, TD= 174 cm WD= 9999 dm, P= 379 mBars, Pmp_Adj= 246
+ Nav_Adjust returned DC_Health = 00
+ t= 2574, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= -79
+ Nav_Adjust returned DC_Health = 00
+ t= 2605, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 128
+ Nav_Adjust returned DC_Health = 00
+ t= 2636, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 76
+ Nav_Adjust returned DC_Health = 00
+ t= 2667, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 2698, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 103
+ Nav_Adjust returned DC_Health = 00
+ t= 2729, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 99
+ Nav_Adjust returned DC_Health = 00
+ t= 2760, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 22
+ Nav_Adjust returned DC_Health = 00
+ t= 2791, TD= 174 cm WD= 9999 dm, P= 380 mBars, Pmp_Adj= 198
+ Nav_Adjust returned DC_Health = 00
+ t= 2822, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= -102
+ Nav_Adjust returned DC_Health = 00
+ t= 2853, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 165
+ Nav_Adjust returned DC_Health = 00
+ t= 2884, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 65
+ Nav_Adjust returned DC_Health = 00
+ t= 2915, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 2946, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 136
+ Nav_Adjust returned DC_Health = 00
+ t= 2977, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 11
+ Nav_Adjust returned DC_Health = 00
+ t= 3008, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 130
+ Nav_Adjust returned DC_Health = 00
+ t= 3039, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 22
+ Nav_Adjust returned DC_Health = 00
+ t= 3070, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 96
+ Nav_Adjust returned DC_Health = 00
+ t= 3101, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 3132, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 103
+ Nav_Adjust returned DC_Health = 00
+ t= 3163, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 65
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 003 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 15:45:00
+
+ t= 3194, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 109
+ Nav_Adjust returned DC_Health = 00
+ t= 3225, TD= 174 cm WD= 9999 dm, P= 378 mBars, Pmp_Adj= 89
+ Nav_Adjust returned DC_Health = 00
+ t= 3256, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= -11
+ Nav_Adjust returned DC_Health = 00
+ t= 3287, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 100
+ Nav_Adjust returned DC_Health = 00
+ t= 3318, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= 69
+ Nav_Adjust returned DC_Health = 00
+ t= 3349, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 170
+ Nav_Adjust returned DC_Health = 00
+ t= 3380, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 8
+ Nav_Adjust returned DC_Health = 00
+ t= 3411, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 104
+ Nav_Adjust returned DC_Health = 00
+ t= 3442, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= -1
+ Nav_Adjust returned DC_Health = 00
+ t= 3473, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 117
+ Nav_Adjust returned DC_Health = 02
+ t= 3504, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 126
+ Nav_Adjust returned DC_Health = 00
+ t= 3535, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 45
+ Nav_Adjust returned DC_Health = 02
+ t= 3566, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 93
+ Nav_Adjust returned DC_Health = 00
+ t= 3597, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= -1
+ Nav_Adjust returned DC_Health = 00
+ t= 3628, TD= 174 cm WD= 9999 dm, P= 373 mBars, Pmp_Adj= 117
+ Nav_Adjust returned DC_Health = 02
+ t= 3659, TD= 174 cm WD= 9999 dm, P= 375 mBars, Pmp_Adj= 109
+ Nav_Adjust returned DC_Health = 00
+ t= 3690, TD= 174 cm WD= 9999 dm, P= 375 mBars, Pmp_Adj= 55
+ Nav_Adjust returned DC_Health = 00
+ t= 3721, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 93
+ Nav_Adjust returned DC_Health = 00
+ t= 3752, TD= 174 cm WD= 9999 dm, P= 372 mBars, Pmp_Adj= -1
+ Nav_Adjust returned DC_Health = 00
+ t= 3783, TD= 174 cm WD= 9999 dm, P= 375 mBars, Pmp_Adj= 167
+ Nav_Adjust returned DC_Health = 02
+ t= 3814, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 78
+ Nav_Adjust returned DC_Health = 00
+ t= 3845, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 39
+ Nav_Adjust returned DC_Health = 00
+ t= 3876, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 87
+ Nav_Adjust returned DC_Health = 00
+ t= 3907, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 93
+ Nav_Adjust returned DC_Health = 00
+ t= 3938, TD= 174 cm WD= 9999 dm, P= 378 mBars, Pmp_Adj= 83
+ Nav_Adjust returned DC_Health = 00
+ t= 3969, TD= 174 cm WD= 9999 dm, P= 376 mBars, Pmp_Adj= 33
+ Nav_Adjust returned DC_Health = 00
+ t= 4000, TD= 174 cm WD= 9999 dm, P= 377 mBars, Pmp_Adj= 114
+ Nav_Adjust returned DC_Health = 00
+ t= 4031, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 15
+ Nav_Adjust returned DC_Health = 00
+ t= 4062, TD= 174 cm WD= 9999 dm, P= 374 mBars, Pmp_Adj= 107
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 003 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 16:00:00
+
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 64 cBars, Reservoir not Empty
+ Vacuum OK
+ VBat= 16.10 V, IBat= -0.039 A, Capacity= 88.0%
+ Battery charge OK
+ Press= 375 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x84
+
+->
+
+<><><><><><
+
+Cycle: 003 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 16:15:00
+><><[]
+ BMod_Flags= 0x01, Position= 12486, Max_Extension= 12687
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 003 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 16:30:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+Cycle: 004 Mode: DIV1 Batt: 11.95 Date: 2017/05/18 Time: 16:45:00
+><><><><><><><><><
+
+->
+ t= 1, TD= 200 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= 857
+ Nav_Adjust returned DC_Health = 00
+ t= 32, TD= 200 cm WD= 9999 dm, P= 327 mBars, Pmp_Adj= -34
+ Nav_Adjust returned DC_Health = 00
+ t= 63, TD= 200 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 219
+ Nav_Adjust returned DC_Health = 00
+ t= 94, TD= 200 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= -5
+ Nav_Adjust returned DC_Health = 00
+ t= 125, TD= 200 cm WD= 9999 dm, P= 337 mBars, Pmp_Adj= 74
+ Nav_Adjust returned DC_Health = 00
+ t= 156, TD= 200 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 48
+ Nav_Adjust returned DC_Health = 00
+ t= 187, TD= 200 cm WD= 9999 dm, P= 337 mBars, Pmp_Adj= 25
+ Nav_Adjust returned DC_Health = 00
+ t= 218, TD= 200 cm WD= 9999 dm, P= 337 mBars, Pmp_Adj= 62
+ Nav_Adjust returned DC_Health = 00
+ t= 249, TD= 200 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 35
+ Nav_Adjust returned DC_Health = 00
+ t= 280, TD= 200 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 96
+ Nav_Adjust returned DC_Health = 00
+ t= 311, TD= 200 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= -70
+ Nav_Adjust returned DC_Health = 00
+ t= 342, TD= 135 cm WD= 9999 dm, P= 333 mBars, Pmp_Adj= 551
+ Nav_Adjust returned DC_Health = 00
+ t= 373, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 115
+ Nav_Adjust returned DC_Health = 00
+ t= 404, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 11
+ Nav_Adjust returned DC_Health = 00
+ t= 435, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 113
+ Nav_Adjust returned DC_Health = 00
+ t= 466, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= 14
+ Nav_Adjust returned DC_Health = 00
+ t= 497, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 173
+ Nav_Adjust returned DC_Health = 00
+ t= 528, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 68
+ Nav_Adjust returned DC_Health = 00
+ t= 559, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 56
+ Nav_Adjust returned DC_Health = 00
+ t= 590, TD= 135 cm WD= 9999 dm, P= 328 mBars, Pmp_Adj= -92
+ Nav_Adjust returned DC_Health = 00
+ t= 621, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 296
+ Nav_Adjust returned DC_Health = 00
+ t= 652, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= -47
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 004 Mode: DIV1 Batt: 11.95 Date: 2017/05/18 Time: 17:00:00
+
+ t= 683, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 140
+ Nav_Adjust returned DC_Health = 00
+ t= 714, TD= 135 cm WD= 9999 dm, P= 339 mBars, Pmp_Adj= 139
+ Nav_Adjust returned DC_Health = 00
+ t= 745, TD= 135 cm WD= 9999 dm, P= 339 mBars, Pmp_Adj= 25
+ Nav_Adjust returned DC_Health = 00
+ t= 776, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= -41
+ Nav_Adjust returned DC_Health = 00
+ t= 807, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 215
+ Nav_Adjust returned DC_Health = 00
+ t= 838, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 17
+ Nav_Adjust returned DC_Health = 00
+ t= 869, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 69
+ Nav_Adjust returned DC_Health = 00
+ t= 900, TD= 135 cm WD= 9999 dm, P= 330 mBars, Pmp_Adj= 18
+ Nav_Adjust returned DC_Health = 00
+ t= 931, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 217
+ Nav_Adjust returned DC_Health = 00
+ t= 962, TD= 135 cm WD= 9999 dm, P= 333 mBars, Pmp_Adj= -37
+ Nav_Adjust returned DC_Health = 02
+ t= 993, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 157
+ Nav_Adjust returned DC_Health = 00
+ t= 1024, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 45
+ Nav_Adjust returned DC_Health = 00
+ t= 1055, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= 8
+ Nav_Adjust returned DC_Health = 00
+ t= 1086, TD= 135 cm WD= 9999 dm, P= 339 mBars, Pmp_Adj= 235
+ Nav_Adjust returned DC_Health = 00
+ t= 1117, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= -12
+ Nav_Adjust returned DC_Health = 00
+ t= 1148, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= -14
+ Nav_Adjust returned DC_Health = 00
+ t= 1179, TD= 135 cm WD= 9999 dm, P= 327 mBars, Pmp_Adj= 52
+ Nav_Adjust returned DC_Health = 00
+ t= 1210, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 277
+ Nav_Adjust returned DC_Health = 00
+ t= 1241, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= -17
+ Nav_Adjust returned DC_Health = 00
+ t= 1272, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 1303, TD= 135 cm WD= 9999 dm, P= 333 mBars, Pmp_Adj= 52
+ Nav_Adjust returned DC_Health = 00
+ t= 1334, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 130
+ Nav_Adjust returned DC_Health = 00
+ t= 1365, TD= 135 cm WD= 9999 dm, P= 330 mBars, Pmp_Adj= -29
+ Nav_Adjust returned DC_Health = 00
+ t= 1396, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 227
+ Nav_Adjust returned DC_Health = 00
+ t= 1427, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 13
+ Nav_Adjust returned DC_Health = 00
+ t= 1458, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 1489, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 69
+ Nav_Adjust returned DC_Health = 00
+ t= 1520, TD= 135 cm WD= 9999 dm, P= 337 mBars, Pmp_Adj= 136
+ Nav_Adjust returned DC_Health = 00
+ t= 1551, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 62
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 004 Mode: DIV1 Batt: 11.95 Date: 2017/05/18 Time: 17:15:00
+
+ t= 1582, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= -1
+ Nav_Adjust returned DC_Health = 00
+ t= 1613, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 151
+ Nav_Adjust returned DC_Health = 02
+ t= 1644, TD= 135 cm WD= 9999 dm, P= 339 mBars, Pmp_Adj= 106
+ Nav_Adjust returned DC_Health = 00
+ t= 1675, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= -4
+ Nav_Adjust returned DC_Health = 00
+ t= 1706, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 141
+ Nav_Adjust returned DC_Health = 00
+ t= 1737, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 56
+ Nav_Adjust returned DC_Health = 00
+ t= 1768, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 26
+ Nav_Adjust returned DC_Health = 00
+ t= 1799, TD= 135 cm WD= 9999 dm, P= 339 mBars, Pmp_Adj= 175
+ Nav_Adjust returned DC_Health = 00
+ t= 1830, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= -15
+ Nav_Adjust returned DC_Health = 00
+ t= 1861, TD= 135 cm WD= 9999 dm, P= 340 mBars, Pmp_Adj= 175
+ Nav_Adjust returned DC_Health = 00
+ t= 1892, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= -31
+ Nav_Adjust returned DC_Health = 00
+ t= 1923, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 118
+ Nav_Adjust returned DC_Health = 00
+ t= 1954, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 42
+ Nav_Adjust returned DC_Health = 00
+ t= 1985, TD= 135 cm WD= 9999 dm, P= 327 mBars, Pmp_Adj= -22
+ Nav_Adjust returned DC_Health = 00
+ t= 2016, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 264
+ Nav_Adjust returned DC_Health = 00
+ t= 2047, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 36
+ Nav_Adjust returned DC_Health = 00
+ t= 2078, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 38
+ Nav_Adjust returned DC_Health = 00
+ t= 2109, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 137
+ Nav_Adjust returned DC_Health = 00
+ t= 2140, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= -21
+ Nav_Adjust returned DC_Health = 00
+ t= 2171, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 151
+ Nav_Adjust returned DC_Health = 00
+ t= 2202, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 89
+ Nav_Adjust returned DC_Health = 00
+ t= 2233, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 5
+ Nav_Adjust returned DC_Health = 00
+ t= 2264, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= 56
+ Nav_Adjust returned DC_Health = 00
+ t= 2295, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 173
+ Nav_Adjust returned DC_Health = 00
+ t= 2326, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= -33
+ Nav_Adjust returned DC_Health = 00
+ t= 2357, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 184
+ Nav_Adjust returned DC_Health = 00
+ t= 2388, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 0
+ Nav_Adjust returned DC_Health = 00
+ t= 2419, TD= 135 cm WD= 9999 dm, P= 326 mBars, Pmp_Adj= -38
+ Nav_Adjust returned DC_Health = 02
+ t= 2450, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 325
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 004 Mode: DIV1 Batt: 11.96 Date: 2017/05/18 Time: 17:30:00
+
+ t= 2481, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= -28
+ Nav_Adjust returned DC_Health = 00
+ t= 2512, TD= 135 cm WD= 9999 dm, P= 330 mBars, Pmp_Adj= -25
+ Nav_Adjust returned DC_Health = 00
+ t= 2543, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 272
+ Nav_Adjust returned DC_Health = 00
+ t= 2574, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= -108
+ Nav_Adjust returned DC_Health = 00
+ t= 2605, TD= 135 cm WD= 9999 dm, P= 337 mBars, Pmp_Adj= 222
+ Nav_Adjust returned DC_Health = 00
+ t= 2636, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= -9
+ Nav_Adjust returned DC_Health = 00
+ t= 2667, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 79
+ Nav_Adjust returned DC_Health = 00
+ t= 2698, TD= 135 cm WD= 9999 dm, P= 339 mBars, Pmp_Adj= 170
+ Nav_Adjust returned DC_Health = 00
+ t= 2729, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= -25
+ Nav_Adjust returned DC_Health = 00
+ t= 2760, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= 141
+ Nav_Adjust returned DC_Health = 00
+ t= 2791, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= -11
+ Nav_Adjust returned DC_Health = 00
+ t= 2822, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 134
+ Nav_Adjust returned DC_Health = 00
+ t= 2853, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= 65
+ Nav_Adjust returned DC_Health = 00
+ t= 2884, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 59
+ Nav_Adjust returned DC_Health = 00
+ t= 2915, TD= 135 cm WD= 9999 dm, P= 345 mBars, Pmp_Adj= 272
+ Nav_Adjust returned DC_Health = 00
+ t= 2946, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= -153
+ Nav_Adjust returned DC_Health = 00
+ t= 2977, TD= 135 cm WD= 9999 dm, P= 337 mBars, Pmp_Adj= 133
+ Nav_Adjust returned DC_Health = 00
+ t= 3008, TD= 135 cm WD= 9999 dm, P= 336 mBars, Pmp_Adj= 70
+ Nav_Adjust returned DC_Health = 00
+ t= 3039, TD= 135 cm WD= 9999 dm, P= 334 mBars, Pmp_Adj= 52
+ Nav_Adjust returned DC_Health = 00
+ t= 3070, TD= 135 cm WD= 9999 dm, P= 332 mBars, Pmp_Adj= 62
+ Nav_Adjust returned DC_Health = 00
+ t= 3101, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= 265
+ Nav_Adjust returned DC_Health = 00
+ t= 3132, TD= 135 cm WD= 9999 dm, P= 335 mBars, Pmp_Adj= -144
+ Nav_Adjust returned DC_Health = 00
+ t= 3163, TD= 135 cm WD= 9999 dm, P= 344 mBars, Pmp_Adj= 301
+ Nav_Adjust returned DC_Health = 00
+ t= 3194, TD= 135 cm WD= 9999 dm, P= 344 mBars, Pmp_Adj= -14
+ Nav_Adjust returned DC_Health = 00
+ t= 3225, TD= 135 cm WD= 9999 dm, P= 341 mBars, Pmp_Adj= 28
+ Nav_Adjust returned DC_Health = 00
+ t= 3256, TD= 135 cm WD= 9999 dm, P= 337 mBars, Pmp_Adj= 41
+ Nav_Adjust returned DC_Health = 00
+ t= 3287, TD= 135 cm WD= 9999 dm, P= 343 mBars, Pmp_Adj= 220
+ Nav_Adjust returned DC_Health = 00
+ t= 3318, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= 0
+ Nav_Adjust returned DC_Health = 00
+ t= 3349, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= 89
+ Nav_Adjust returned DC_Health = 02
+
+Cycle: 004 Mode: DIV1 Batt: 11.95 Date: 2017/05/18 Time: 17:45:00
+
+ t= 3380, TD= 135 cm WD= 9999 dm, P= 346 mBars, Pmp_Adj= 146
+ Nav_Adjust returned DC_Health = 00
+ t= 3411, TD= 135 cm WD= 9999 dm, P= 348 mBars, Pmp_Adj= 72
+ Nav_Adjust returned DC_Health = 00
+ t= 3442, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= -41
+ Nav_Adjust returned DC_Health = 00
+ t= 3473, TD= 135 cm WD= 9999 dm, P= 345 mBars, Pmp_Adj= 192
+ Nav_Adjust returned DC_Health = 00
+ t= 3504, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= -2
+ Nav_Adjust returned DC_Health = 00
+ t= 3535, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= 110
+ Nav_Adjust returned DC_Health = 00
+ t= 3566, TD= 135 cm WD= 9999 dm, P= 347 mBars, Pmp_Adj= 163
+ Nav_Adjust returned DC_Health = 02
+ t= 3597, TD= 135 cm WD= 9999 dm, P= 346 mBars, Pmp_Adj= 11
+ Nav_Adjust returned DC_Health = 00
+ t= 3628, TD= 135 cm WD= 9999 dm, P= 344 mBars, Pmp_Adj= 56
+ Nav_Adjust returned DC_Health = 00
+ t= 3659, TD= 135 cm WD= 9999 dm, P= 343 mBars, Pmp_Adj= 83
+ Nav_Adjust returned DC_Health = 00
+ t= 3690, TD= 135 cm WD= 9999 dm, P= 343 mBars, Pmp_Adj= 89
+ Nav_Adjust returned DC_Health = 00
+ t= 3721, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= 62
+ Nav_Adjust returned DC_Health = 00
+ t= 3752, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= 89
+ Nav_Adjust returned DC_Health = 00
+ t= 3783, TD= 135 cm WD= 9999 dm, P= 343 mBars, Pmp_Adj= 95
+ Nav_Adjust returned DC_Health = 00
+ t= 3814, TD= 135 cm WD= 9999 dm, P= 343 mBars, Pmp_Adj= 68
+ Nav_Adjust returned DC_Health = 00
+ t= 3845, TD= 135 cm WD= 9999 dm, P= 346 mBars, Pmp_Adj= 129
+ Nav_Adjust returned DC_Health = 00
+ t= 3876, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= -18
+ Nav_Adjust returned DC_Health = 00
+ t= 3907, TD= 135 cm WD= 9999 dm, P= 350 mBars, Pmp_Adj= 255
+ Nav_Adjust returned DC_Health = 00
+ t= 3938, TD= 135 cm WD= 9999 dm, P= 350 mBars, Pmp_Adj= -1
+ Nav_Adjust returned DC_Health = 00
+ t= 3969, TD= 135 cm WD= 9999 dm, P= 342 mBars, Pmp_Adj= -53
+ Nav_Adjust returned DC_Health = 02
+ t= 4000, TD= 135 cm WD= 9999 dm, P= 344 mBars, Pmp_Adj= 196
+ Nav_Adjust returned DC_Health = 00
+ t= 4031, TD= 135 cm WD= 9999 dm, P= 348 mBars, Pmp_Adj= 126
+ Nav_Adjust returned DC_Health = 00
+ t= 4062, TD= 135 cm WD= 9999 dm, P= 352 mBars, Pmp_Adj= 106
+ Nav_Adjust returned DC_Health = 00
+ t= 4093, TD= 135 cm WD= 9999 dm, P= 349 mBars, Pmp_Adj= -10
+ Nav_Adjust returned DC_Health = 00
+ t= 4124, TD= 135 cm WD= 9999 dm, P= 349 mBars, Pmp_Adj= 112
+ Nav_Adjust returned DC_Health = 00
+ t= 4155, TD= 135 cm WD= 9999 dm, P= 348 mBars, Pmp_Adj= 64
+ Nav_Adjust returned DC_Health = 00
+ t= 4186, TD= 135 cm WD= 9999 dm, P= 346 mBars, Pmp_Adj= 57
+ Nav_Adjust returned DC_Health = 00
+ t= 4217, TD= 135 cm WD= 9999 dm, P= 338 mBars, Pmp_Adj= -34
+ Nav_Adjust returned DC_Health = 00
+ t= 4248, TD= 135 cm WD= 9999 dm, P= 333 mBars, Pmp_Adj= 76
+ Nav_Adjust returned DC_Health = 00
+
+Cycle: 004 Mode: DIV1 Batt: 11.95 Date: 2017/05/18 Time: 18:00:00
+
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 63 cBars, Reservoir not Empty
+ Vacuum OK
+ VBat= 16.03 V, IBat= -0.041 A, Capacity= 87.0%
+ Battery charge OK
+ Press= 319 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x84
+
+->
+
+<><><><><><
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 18:15:00
+><><[]
+ BMod_Flags= 0x01, Position= 12455, Max_Extension= 12656
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 18:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.99 V, IBat= -0.039 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 54 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 18:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.99 V, IBat= -0.056 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 51 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 19:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.99 V, IBat= -0.068 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.94 Date: 2017/05/18 Time: 19:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.99 V, IBat= -0.066 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 49 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 19:30:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 19:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.98 V, IBat= -0.083 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 20:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.98 V, IBat= -0.073 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 20:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.97 V, IBat= -0.085 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 55 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 20:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.97 V, IBat= -0.084 A, Capacity= 86.0%
+ Battery charge OK
+ Press= 54 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 20:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.96 V, IBat= -0.086 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 51 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 21:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.96 V, IBat= -0.086 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 21:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.96 V, IBat= -0.074 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 21:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.95 V, IBat= -0.075 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 55 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 21:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.95 V, IBat= -0.076 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 49 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 22:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.95 V, IBat= -0.076 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 22:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.94 V, IBat= -0.077 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 55 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 22:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.94 V, IBat= -0.077 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 51 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 22:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.94 V, IBat= -0.076 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 23:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.93 V, IBat= -0.076 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 56 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 23:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.93 V, IBat= -0.077 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/18 Time: 23:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.93 V, IBat= -0.077 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 55 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/18 Time: 23:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.92 V, IBat= -0.076 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 54 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 00:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.92 V, IBat= -0.076 A, Capacity= 85.0%
+ Battery charge OK
+ Press= 50 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 00:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.92 V, IBat= -0.078 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 00:30:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 00:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.91 V, IBat= -0.078 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 01:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.91 V, IBat= -0.077 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 57 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 01:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.91 V, IBat= -0.079 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 55 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 01:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.90 V, IBat= -0.078 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 49 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 01:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.90 V, IBat= -0.079 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 51 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 02:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.90 V, IBat= -0.077 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 51 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 02:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.89 V, IBat= -0.077 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 61 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 02:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.89 V, IBat= -0.078 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.97 Date: 2017/05/19 Time: 02:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.89 V, IBat= -0.076 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 57 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 03:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.88 V, IBat= -0.078 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 03:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.88 V, IBat= -0.078 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 62 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.97 Date: 2017/05/19 Time: 03:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.88 V, IBat= -0.079 A, Capacity= 84.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.97 Date: 2017/05/19 Time: 03:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.87 V, IBat= -0.076 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 04:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.87 V, IBat= -0.078 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 57 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 04:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.87 V, IBat= -0.077 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 60 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 04:30:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 04:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.86 V, IBat= -0.077 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 05:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.86 V, IBat= -0.079 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 05:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.85 V, IBat= -0.078 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 54 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 05:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.85 V, IBat= -0.078 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 55 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 05:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.85 V, IBat= -0.078 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 06:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.85 V, IBat= -0.079 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 06:15:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 06:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.84 V, IBat= -0.079 A, Capacity= 83.0%
+ Battery charge OK
+ Press= 50 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 06:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.84 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 07:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.83 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 58 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 07:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.83 V, IBat= -0.080 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 57 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 07:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.83 V, IBat= -0.078 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 61 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 07:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.82 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 61 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 08:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.82 V, IBat= -0.077 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 08:15:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 08:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.82 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.97 Date: 2017/05/19 Time: 08:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.81 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 67 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 09:00:00
+
+ ..?
+->
+ ..?
+->
+ ..?
+->
+
+Cycle: 004 Mode: SURF Batt: 11.97 Date: 2017/05/19 Time: 09:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.81 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 09:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.80 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 60 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 09:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.80 V, IBat= -0.079 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 59 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.97 Date: 2017/05/19 Time: 10:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.80 V, IBat= -0.080 A, Capacity= 82.0%
+ Battery charge OK
+ Press= 60 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 10:15:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.79 V, IBat= -0.079 A, Capacity= 81.0%
+ Battery charge OK
+ Press= 60 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 10:30:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.79 V, IBat= -0.079 A, Capacity= 81.0%
+ Battery charge OK
+ Press= 53 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.95 Date: 2017/05/19 Time: 10:45:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.79 V, IBat= -0.080 A, Capacity= 81.0%
+ Battery charge OK
+ Press= 52 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.96 Date: 2017/05/19 Time: 11:00:00
+
+ ..?
+->
+ Depth Controller Rev 2.8 Jan 2017
+ Vac= 55 cBars, Reservoir Empty
+ Vacuum OK
+ VBat= 15.79 V, IBat= -0.081 A, Capacity= 81.0%
+ Battery charge OK
+ Press= 27 mBars, NMux_Flags= 0x40
+ BMod_Flags= 0x01
+ Sys_Flags= 0x00  DC_Health= 0x00 Dive_Flags= 0x15
+
+->
+
+Cycle: 004 Mode: SURF Batt: 11.97 Date: 2017/05/19 Time: 11:15:00
